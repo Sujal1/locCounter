@@ -14,6 +14,7 @@
 
 #include <math.h>
 #include <lib.h>
+#include <test.h>
 
 using namespace std;
 

@@ -1,0 +1,87 @@
+From 6dbd6b105d06a1a0dd5752d78728ea14ca5a5da2 Mon Sep 17 00:00:00 2001
+From: Sujal <st115529@ait.ac.th>
+Date: Wed, 12 Mar 2014 12:20:37 +0700
+Subject: [PATCH] Library.h added
+
+---
+ src/locCounter.cpp       |  1 +
+ src/newpatch.patch       |  0
+ src/newpatch1.patch      | 24 ++++++++++++++++++++++++
+ src/some-patch0001.patch | 18 ++++++++++++++++++
+ 4 files changed, 43 insertions(+)
+ create mode 100644 src/newpatch.patch
+ create mode 100644 src/newpatch1.patch
+ create mode 100644 src/some-patch0001.patch
+
+diff --git a/src/locCounter.cpp b/src/locCounter.cpp
+index f3d357a..bf61110 100644
+--- a/src/locCounter.cpp
++++ b/src/locCounter.cpp
+@@ -13,6 +13,7 @@
+ #include "locCounter.hpp"
+ 
+ #include <math.h>
++#include <lib.h>
+ 
+ using namespace std;
+ 
+diff --git a/src/newpatch.patch b/src/newpatch.patch
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/newpatch1.patch b/src/newpatch1.patch
+new file mode 100644
+index 0000000..c56a982
+--- /dev/null
++++ b/src/newpatch1.patch
+@@ -0,0 +1,24 @@
++From ceecc869702d4c9cef999df0cb1fef0b8e0c59fd Mon Sep 17 00:00:00 2001
++From: Sujal <st115529@ait.ac.th>
++Date: Wed, 12 Mar 2014 11:56:25 +0700
++Subject: [PATCH] Added math header file
++
++---
++ src/locCounter.cpp | 1 +
++ 1 file changed, 1 insertion(+)
++
++diff --git a/src/locCounter.cpp b/src/locCounter.cpp
++index 8d1de01..f3d357a 100644
++--- a/src/locCounter.cpp
+++++ b/src/locCounter.cpp
++@@ -12,6 +12,7 @@
++ #include <cctype>
++ #include "locCounter.hpp"
++ 
+++#include <math.h>
++ 
++ using namespace std;
++ 
++-- 
++1.8.1.2
++
+diff --git a/src/some-patch0001.patch b/src/some-patch0001.patch
+new file mode 100644
+index 0000000..16530fc
+--- /dev/null
++++ b/src/some-patch0001.patch
+@@ -0,0 +1,18 @@
++commit ceecc869702d4c9cef999df0cb1fef0b8e0c59fd
++Author: Sujal <st115529@ait.ac.th>
++Date:   Wed Mar 12 11:56:25 2014 +0700
++
++    Added math header file
++
++diff --git a/src/locCounter.cpp b/src/locCounter.cpp
++index 8d1de01..f3d357a 100644
++--- a/src/locCounter.cpp
+++++ b/src/locCounter.cpp
++@@ -12,6 +12,7 @@
++ #include <cctype>
++ #include "locCounter.hpp"
++ 
+++#include <math.h>
++ 
++ using namespace std;
++ 
+-- 
+1.8.1.2
+
