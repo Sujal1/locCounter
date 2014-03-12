@@ -13,6 +13,7 @@
 #include "locCounter.hpp"
 
 #include <math.h>
+#include <lib.h>
 
 using namespace std;
 

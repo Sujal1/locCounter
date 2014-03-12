@@ -1,0 +1,24 @@
+From ceecc869702d4c9cef999df0cb1fef0b8e0c59fd Mon Sep 17 00:00:00 2001
+From: Sujal <st115529@ait.ac.th>
+Date: Wed, 12 Mar 2014 11:56:25 +0700
+Subject: [PATCH] Added math header file
+
+---
+ src/locCounter.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/locCounter.cpp b/src/locCounter.cpp
+index 8d1de01..f3d357a 100644
+--- a/src/locCounter.cpp
++++ b/src/locCounter.cpp
+@@ -12,6 +12,7 @@
+ #include <cctype>
+ #include "locCounter.hpp"
+ 
++#include <math.h>
+ 
+ using namespace std;
+ 
+-- 
+1.8.1.2
+
