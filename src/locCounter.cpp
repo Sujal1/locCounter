@@ -12,6 +12,7 @@
 #include <cctype>
 #include "locCounter.hpp"
 
+#include <math.h>
 
 using namespace std;
 
